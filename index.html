@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जगन्नाथ रथ यात्रा की शुभकामनाएँ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- पेज की स्टाइलिंग (CSS) --- */
+        body {
+            font-family: 'Tiro Devanagari Hindi', serif;
+            background: radial-gradient(circle, #fffde7, #ffecb3);
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            z-index: 10;
+        }
+
+        .container {
+            background-color: rgba(255, 251, 239, 0.97);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 0 0 5px #c87000;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            border: 3px solid #FF9800;
+            position: relative;
+        }
+
+        /* --- फूलों की बारिश (नया और सरल तरीका) --- */
+        #flower-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 999;
+            overflow: hidden;
+        }
+
+        .flower {
+            position: absolute;
+            top: -50px;
+            font-size: 30px; /* इमोजी का आकार */
+            color: #ffc107; /* फूलों का रंग */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            animation: fall 10s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        /* --- बाकी की स्टाइलिंग --- */
+        .heading-decorator { color: #FF5722; font-size: 1.2em; margin-bottom: -10px; }
+        h1 { color: #8E2420; font-size: 2.5em; margin-bottom: 15px; font-weight: bold; text-shadow: 1px 1px 2px rgba(255, 215, 0, 0.5); }
+        .main-gif { max-width: 100%; height: auto; border-radius: 15px; margin-bottom: 20px; border: 4px solid #FFC107; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .wish-message { font-size: 1.3em; color: #4E342E; line-height: 1.7; }
+        .from-sender { margin-top: 25px; font-size: 1.4em; font-weight: bold; color: #c62828; display: none; background-color: #FFF9C4; padding: 10px; border-radius: 10px; border: 2px dashed #f57c00; }
+        .share-section { margin-top: 30px; padding-top: 20px; border-top: 4px double #FFC107; }
+        .share-section h2 { font-size: 1.6em; color: #004D40; margin-bottom: 15px; }
+        .name-input { width: calc(100% - 24px); padding: 12px; border: 2px solid #FFB74D; border-radius: 10px; font-size: 1em; margin-bottom: 15px; font-family: 'Arial', sans-serif; background-color: #fff; }
+        .name-input:focus { outline: none; border-color: #8E2420; box-shadow: 0 0 5px rgba(142, 36, 32, 0.5); }
+        
+        /* --- शेयर बटन और लोगो की स्टाइलिंग --- */
+        .share-button {
+            background: linear-gradient(145deg, #25d366, #128c7e); /* व्हाट्सएप वाला हरा ग्रेडिएंट */
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-family: 'Tiro Devanagari Hindi', serif;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            letter-spacing: 1px;
+            display: inline-flex; /* लोगो और टेक्स्ट को एक लाइन में रखने के लिए */
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* लोगो और टेक्स्ट के बीच गैप */
+        }
+        .share-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(37, 211, 102, 0.5);
+        }
+        .share-button svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor; /* यह SVG का रंग बटन के टेक्स्ट रंग (सफ़ेद) जैसा कर देगा */
+        }
+
+        .sender-name { display: inline-block; animation: fadeIn 2s; color: #d32f2f; font-weight: bold; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div id="flower-container"></div>
+    
+    <div class="main-container">
+        <div class="container">
+            <div class="heading-decorator">~*~ ॐ जय जगन्नाथ ~*~</div>
+            <hr>
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '5a529c6699e9b7c795301745779914da',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/5a529c6699e9b7c795301745779914da/invoke.js"></script>
+<hr>
+            <h1>रथ यात्रा पर्व</h1>
+            <p class="wish-message">आपको और आपके पूरे परिवार को<br>महाप्रभु जगन्नाथ जी की रथ यात्रा के पावन पर्व की<br>हार्दिक शुभकामनाएँ।</p>
+            
+            <img src="Jagannatha Ratha Yatra.gif" alt="जगन्नाथ रथ यात्रा GIF" class="main-gif">
+            
+            <p class="wish-message">भगवान जगन्नाथ, बलभद्र और सुभद्रा का आशीर्वाद आप पर सदैव बना रहे।<br>🙏 **जय जगन्नाथ!** 🙏</p>
+<hr>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '5a529c6699e9b7c795301745779914da',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/5a529c6699e9b7c795301745779914da/invoke.js"></script>
+<hr>
+            <div id="from-display" class="from-sender">
+                <span class="sender-name">
+                    <span id="sender-name-display"></span> की ओर से शुभकामनाएँ
+                </span>
+            </div>
+
+            <div class="share-section">
+                <h2>अपनी शुभकामनाएं भेजें</h2>
+                <input type="text" id="senderNameInput" class="name-input" placeholder="यहाँ अपना नाम लिखें...">
+                <button id="shareBtn" class="share-button">
+                    <!-- व्हाट्सएप का SVG लोगो -->
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.31 20.62C8.75 21.41 10.36 21.86 12.04 21.86C17.5 21.86 21.95 17.41 21.95 11.95C21.95 6.49 17.5 2 12.04 2M12.04 3.67C16.56 3.67 20.28 7.39 20.28 11.91C20.28 16.43 16.56 20.14 12.04 20.14C10.53 20.14 9.09 19.72 7.89 19L7.23 18.61L4.62 19.28L5.34 16.78L4.93 16.1C4.13 14.79 3.79 13.32 3.79 11.91C3.79 7.39 7.52 3.67 12.04 3.67M17.37 14.62C17.15 15.24 16.22 15.74 15.82 15.79C15.42 15.84 14.94 15.86 14.54 15.7C13.96 15.5 13.06 15.18 12.06 14.24C10.82 13.1 10.03 11.69 9.83 11.39C9.62 11.08 9.04 10.18 9.04 9.32C9.04 8.46 9.41 8.1 9.69 7.82C9.97 7.54 10.34 7.45 10.6 7.45C10.74 7.45 10.88 7.45 11 7.5C11.3 7.59 11.49 8.18 11.64 8.38C11.79 8.58 11.88 8.85 11.78 9.04C11.68 9.24 11.59 9.34 11.44 9.51C11.3 9.68 11.16 9.81 11.04 9.94C10.93 10.08 10.82 10.23 11.02 10.53C11.22 10.83 11.69 11.48 12.38 12.13C13.29 12.98 13.94 13.32 14.24 13.47C14.53 13.62 14.73 13.57 14.92 13.37C15.17 13.12 15.44 12.74 15.74 12.36C15.98 12.04 16.25 11.97 16.55 12.07C16.85 12.17 17.65 12.57 17.85 12.77C18.05 12.97 18.15 13.12 18.2 13.27C18.25 13.42 18.25 13.82 18 14.22C17.75 14.62 17.55 14.92 17.37 14.62Z"></path></svg>
+                    <span>शेयर करें</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- पेज का लॉजिक (JavaScript) ---
+
+        window.onload = function() {
+            // URL से भेजने वाले का नाम निकालना
+            const urlParams = new URLSearchParams(window.location.search);
+            const senderName = urlParams.get('from');
+            if (senderName) {
+                const decodedName = decodeURIComponent(senderName);
+                document.getElementById('sender-name-display').innerText = decodedName;
+                document.getElementById('from-display').style.display = 'block';
+            }
+
+            // फूलों की बारिश शुरू करना
+            const flowerContainer = document.getElementById('flower-container');
+            const numberOfFlowers = 25; // आप फूलों की संख्या कम या ज्यादा कर सकते हैं
+
+            for (let i = 0; i < numberOfFlowers; i++) {
+                const flower = document.createElement('div');
+                flower.className = 'flower';
+                flower.innerHTML = '🌼'; // फूलों का इमोजी
+                
+                flower.style.left = Math.random() * 100 + 'vw';
+                flower.style.animationDuration = (Math.random() * 5 + 7) + 's'; // 7 से 12 सेकंड
+                flower.style.animationDelay = Math.random() * 5 + 's';
+                
+                flowerContainer.appendChild(flower);
+            }
+        };
+
+        // शेयर बटन पर क्लिक करने पर
+        document.getElementById('shareBtn').addEventListener('click', async function() {
+            const nameInput = document.getElementById('senderNameInput');
+            const senderName = nameInput.value.trim();
+
+            if (senderName === '') {
+                alert('कृपया शेयर करने के लिए अपना नाम लिखें।');
+                return;
+            }
+
+            const baseUrl = window.location.origin + window.location.pathname;
+            const shareUrl = `${baseUrl}?from=${encodeURIComponent(senderName)}`;
+            const shareTitle = 'जगन्नाथ रथ यात्रा की शुभकामनाएँ';
+            const shareText = `🎉 *${senderName}* की तरफ से आपको और आपके परिवार को जगन्नाथ रथ यात्रा की हार्दिक शुभकामनाएँ! 🙏\n\nमेरी विशेष शुभकामना देखने के लिए नीचे दिए गए लिंक पर क्लिक करें 👇`;
+
+            // Web Share API का उपयोग (यह मोबाइल पर काम करता है)
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: shareTitle,
+                        text: shareText,
+                        url: shareUrl,
+                    });
+                } catch (error) {
+                    console.error('शेयर करने में त्रुटि:', error);
+                }
+            } else {
+                // अगर Web Share API सपोर्ट नहीं करता (जैसे डेस्कटॉप पर), तो सीधे व्हाट्सएप पर भेजें
+                const whatsappMessage = `${shareText}\n\n${shareUrl}`;
+                const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}`;
+                window.open(whatsappLink, '_blank');
+            }
+        });
+    </script>
+
+</body>
+</html>
